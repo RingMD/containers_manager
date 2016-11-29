@@ -1,6 +1,6 @@
-require "containers_manager/version"
-require "containers_manager/application"
-require "containers_manager/cli"
+require 'containers_manager/version'
+
+require 'containers_manager/entities/consul_entry'
 
 module ContainersManager
   # Your code goes here...
