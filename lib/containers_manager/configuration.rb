@@ -9,6 +9,11 @@ module ContainersManager
       @data      = YAML.load_file(file_path)
     end
 
+    def self.check
+      $stdout.puts(@data.inspect)
+      $stdout.puts("OK")
+    end
+
     private
 
     def self.method_missing(method_name, *args, &block)

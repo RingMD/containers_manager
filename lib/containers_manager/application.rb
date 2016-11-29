@@ -7,6 +7,11 @@ module ContainersManager
       tasks.each(&:exec)
     end
 
+    def self.check
+      load_configuration
+      Configuration.check
+    end
+
     private
 
     def self.load_configuration
