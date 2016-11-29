@@ -12,7 +12,7 @@ module ContainersManager
     end
 
     desc 'check', 'Output the configuration'
-    def exec
+    def check
       exception_rescue do
         Application.check
       end
