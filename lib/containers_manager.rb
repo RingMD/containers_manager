@@ -15,6 +15,3 @@ require 'containers_manager/tasks/deregister_task'
 require 'containers_manager/application'
 
 require 'containers_manager/cli'
-
-module ContainersManager
-end
