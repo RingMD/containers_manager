@@ -18,7 +18,7 @@ module ContainersManager
     end
 
     def self.configuration
-      @configuration ||= Configuration.instance
+      @configuration ||= Configuration
     end
 
     def self.id_provider

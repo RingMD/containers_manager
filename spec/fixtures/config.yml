@@ -1,5 +1,5 @@
 docker_host: 2375
 consul_deregister_url: "localhost:8500/v1/agent/service/deregister"
-consule_service_urls:
+consul_service_urls:
   - "localhost:8500/v1/catalog/service/web"
   - "localhost:8500/v1/catalog/service/realtime"
