@@ -1,7 +1,15 @@
 module ContainersManager
   class Application
     def self.exec
-      $stdout.puts("Hello world")
+      tasks.each(&:exec)
+    end
+
+    private
+
+    def self.tasks
+      [
+        DeregisterTask
+      ]
     end
   end
 end
