@@ -9,7 +9,7 @@ describe ContainersManager::ConsulEntry do
     let(:configuration) { double(:configuration) }
 
     context 'can deregister' do
-      let(:id_provider) { OpenStruct.new(alive_ids: ['6cf3975b77bb6963126d']) }
+      let(:id_provider) { OpenStruct.new(alive_ids: ['11111111111111111']) }
 
       it 'deregisters' do
         subject.set_id_provider(id_provider)
@@ -19,7 +19,7 @@ describe ContainersManager::ConsulEntry do
     end
 
     context 'cannot deregister' do
-      let(:id_provider) { OpenStruct.new(alive_ids: ['11111111111111111']) }
+      let(:id_provider) { OpenStruct.new(alive_ids: ['6cf3975b77bb6963126d']) }
 
       it 'doesnt deregister' do
         subject.set_id_provider(id_provider)

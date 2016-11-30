@@ -23,7 +23,7 @@ module ContainersManager
     end
 
     def can_deregister?
-      id_provider.alive_ids.find { |id| service_id.include?(id) }
+      id_provider.alive_ids.find { |id| service_id.include?(id) }.empty?
     end
 
     def service_id
