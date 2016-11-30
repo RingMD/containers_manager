@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A tool for managing docker containers in a docker swarm}
   spec.description   = %q{A tool for managing docker containers in a docker swarm}
-  spec.homepage      = "https://github.com/lmduc/containers_manager"
+  spec.homepage      = "https://github.com/RingMD/containers_manager"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
