@@ -11,7 +11,7 @@ describe ContainersManager::Configuration do
       value: 'localhost:8500/v1/agent/service/deregister'
     },
     {
-      name: 'consule_service_urls',
+      name: 'consul_service_urls',
       value: [
         'localhost:8500/v1/catalog/service/web',
         'localhost:8500/v1/catalog/service/realtime'
