@@ -1,4 +1,3 @@
-require 'net/http'
 require 'json'
 
 module ContainersManager
@@ -8,8 +7,8 @@ module ContainersManager
     end
 
     def services(url)
-      uri = URI(url)
-      JSON.parse(Net::HTTP.get(uri))
+      resp = `curl -sSL #{url}`
+      JSON.parse(resp)
     end
 
     def deregister(id)
