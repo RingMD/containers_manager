@@ -6,8 +6,9 @@ module ContainersManager
     end
 
     def all_entries
-      @all_entries ||= response_from(consul_service_urls)
-                         .map { |node| ConsulEntry.new(node, configuration).set_id_provider(id_provider) }
+      @all_entries ||= response_from(consul_service_urls).map do |node|
+        ConsulEntry.new(node, configuration).set_id_provider(id_provider)
+      end
     end
 
     private
