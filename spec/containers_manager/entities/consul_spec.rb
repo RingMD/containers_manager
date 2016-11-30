@@ -21,6 +21,7 @@ describe ContainersManager::Consul do
       expect(consul_service).to receive(:services).with(urls[0]).and_return(fake_for(:get_consul_web))
       expect(consul_service).to receive(:services).with(urls[1]).and_return(fake_for(:get_consul_realtime))
       expect(subject.all_entries.count).to eq(3)
+      expect(subject.all_entries.map(&:class).uniq).to eq([ContainersManager::ConsulEntry])
     end
   end
 end

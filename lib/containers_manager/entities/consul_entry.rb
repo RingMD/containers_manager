@@ -7,6 +7,7 @@ module ContainersManager
 
     def set_id_provider(id_provider)
       @id_provider = id_provider
+      self
     end
 
     def deregister_if_possible
